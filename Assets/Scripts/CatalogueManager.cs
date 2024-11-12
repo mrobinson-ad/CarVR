@@ -1,7 +1,12 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.Networking;
+using System.Collections;
+using Newtonsoft.Json;
+
 
 public class CatalogueManager : MonoBehaviour
 {
@@ -18,6 +23,11 @@ public class CatalogueManager : MonoBehaviour
     [SerializeField]
     private Transform carAnchor;
 
+    [SerializeField]
+    private CarSpecs carSpecs;
+
+    public event Action<Car_SO> OnCarSpawned;
+    private string apiUrl = "https://virtualhome.hopto.org/car/getcar/";
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -60,5 +70,33 @@ public class CatalogueManager : MonoBehaviour
         }
         carAnchor.position = car.anchorPos;
         Instantiate(car.carPrefab, carAnchor.position, carAnchor.rotation, carAnchor);
+        OnCarSpawned?.Invoke(car);
+        StartCoroutine(GetCarSpecs(car));
+    }
+
+    private IEnumerator GetCarSpecs(Car_SO car)
+    {
+        using (UnityWebRequest webRequest = UnityWebRequest.Get(apiUrl + car.carName.Replace(" ", "_")))
+        {
+            yield return webRequest.SendWebRequest();
+
+            if (webRequest.result == UnityWebRequest.Result.ConnectionError || webRequest.result == UnityWebRequest.Result.ProtocolError)
+            {
+                Debug.LogError("Error fetching car data: " + webRequest.error);
+            }
+            else
+            {
+                string jsonResponse = webRequest.downloadHandler.text;
+                try
+
+                {
+                    carSpecs = JsonConvert.DeserializeObject<CarSpecs>(jsonResponse);
+                }
+                catch (JsonException ex)
+                {
+                    Debug.LogError("Failed to parse JSON: " + ex.Message);
+                }
+            }
+        }
     }
 }

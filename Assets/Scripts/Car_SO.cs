@@ -11,5 +11,6 @@ public class Car_SO : ScriptableObject
 
     public GameObject carPrefab;
     public Material carPaint;
+    public List<Color> carColors;
     public Vector3 anchorPos;
 }
