@@ -26,6 +26,10 @@ public class CatalogueManager : MonoBehaviour
     [SerializeField]
     private CarSpecs carSpecs;
 
+    [SerializeField]
+    private TextMeshProUGUI model, year, dimensions, horsepower, weight, fuelType, fuelConsumption, fuelCapacity;  
+
+
     public event Action<Car_SO> OnCarSpawned;
     private string apiUrl = "https://virtualhome.hopto.org/car/getcar/";
     private void Awake()
@@ -91,6 +95,7 @@ public class CatalogueManager : MonoBehaviour
 
                 {
                     carSpecs = JsonConvert.DeserializeObject<CarSpecs>(jsonResponse);
+                    SetSpecs(carSpecs);
                 }
                 catch (JsonException ex)
                 {
@@ -98,5 +103,17 @@ public class CatalogueManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void SetSpecs(CarSpecs specs)
+    {
+        model.text = "Model: " + specs.carName.Replace("_", " ");
+        year.text = "Year: " + specs.carYear;
+        dimensions.text = "Dimensions: " + specs.carDimensions;
+        weight.text = "Weight: " + specs.carWeight + "kg";
+        horsepower.text = "Horsepower: " + specs.carHorsepower;
+        fuelType.text = "Fuel type: " + specs.carFuelType;
+        fuelCapacity.text = "Fuel capacity: " + specs.carFuelCapacity;
+        fuelConsumption.text = "Fuel consumption: " + specs.carConsumption;
     }
 }
