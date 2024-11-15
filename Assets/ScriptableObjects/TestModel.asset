@@ -16,4 +16,9 @@ MonoBehaviour:
   carSprite: {fileID: 21300000, guid: 9f59ff2ba65f57949ab10ef7eba11f16, type: 3}
   carPrefab: {fileID: 1654648867817274, guid: 8258fdccd226b584b8dc1c7ac1652db0, type: 3}
   carPaint: {fileID: 2100000, guid: 707eb7b790aaa214bb421203de68536d, type: 2}
+  carColors:
+  - {r: 0.16078432, g: 0.7843138, b: 0.7960785, a: 1}
+  - {r: 0, g: 0.017433185, b: 0.254717, a: 1}
+  - {r: 1, g: 0.76862746, b: 0, a: 1}
+  - {r: 0.7176471, g: 0, b: 0.019607844, a: 1}
   anchorPos: {x: 0, y: 0.8, z: -2.5}

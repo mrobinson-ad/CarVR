@@ -9,7 +9,7 @@ public class ColorChanger : MonoBehaviour
     [SerializeField]
     private GameObject colorButtonPrefab;
 
-    private void Start()
+    private void OnEnable()
     {
         CatalogueManager.Instance.OnCarSpawned += SetColors;
     }
@@ -25,6 +25,8 @@ public class ColorChanger : MonoBehaviour
 
     private void SetColors(Car_SO car)
     {
+        Debug.Log("setColors");
+        Debug.Log(car.carColors.Count);
         foreach (Transform child in gridLayout)
         {
             Destroy(child.gameObject);

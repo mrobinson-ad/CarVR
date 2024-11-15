@@ -27,6 +27,9 @@ public class CatalogueManager : MonoBehaviour
     private CarSpecs carSpecs;
 
     [SerializeField]
+    private GameObject specsUI;
+
+    [SerializeField]
     private TextMeshProUGUI model, year, dimensions, horsepower, weight, fuelType, fuelConsumption, fuelCapacity;  
 
 
@@ -96,6 +99,10 @@ public class CatalogueManager : MonoBehaviour
                 {
                     carSpecs = JsonConvert.DeserializeObject<CarSpecs>(jsonResponse);
                     SetSpecs(carSpecs);
+                    if (!specsUI.activeInHierarchy)
+                    {
+                        specsUI.SetActive(true);
+                    }
                 }
                 catch (JsonException ex)
                 {

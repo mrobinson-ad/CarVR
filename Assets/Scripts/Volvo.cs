@@ -5,6 +5,9 @@ using UnityEngine;
 public class Volvo : MonoBehaviour, ICarInteraction 
 {
     public Dictionary<DoorType, Door> doors = new Dictionary<DoorType, Door>();
+    public AudioClip horn;
+    public AudioClip engine;
+    public AudioSource carAudio;
 
     private void Awake()
     {
@@ -13,10 +16,15 @@ public class Volvo : MonoBehaviour, ICarInteraction
             doors.Add(door.doorType, door);
         }
     }
-    
+
+    public void StartEngine()
+    {
+        carAudio.PlayOneShot(engine, 0.5f);
+    }
+
     public void HonkHorn()
     {
-        throw new System.NotImplementedException();
+        carAudio.PlayOneShot(horn, 0.7f);
     }
 
     public void ToggleDoor(DoorType doorType)
