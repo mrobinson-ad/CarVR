@@ -28,6 +28,8 @@ public class CatalogueManager : MonoBehaviour
 
     [SerializeField]
     private GameObject specsUI;
+    [SerializeField]
+    private GameObject wristUI;
 
     [SerializeField]
     private TextMeshProUGUI model, year, dimensions, horsepower, weight, fuelType, fuelConsumption, fuelCapacity;  
@@ -77,6 +79,8 @@ public class CatalogueManager : MonoBehaviour
         }
         carAnchor.position = car.anchorPos;
         Instantiate(car.carPrefab, carAnchor.position, carAnchor.rotation, carAnchor);
+        if (!wristUI.activeInHierarchy)
+            wristUI.SetActive(true);
         OnCarSpawned?.Invoke(car);
         StartCoroutine(GetCarSpecs(car));
     }
@@ -103,6 +107,7 @@ public class CatalogueManager : MonoBehaviour
                     {
                         specsUI.SetActive(true);
                     }
+
                 }
                 catch (JsonException ex)
                 {
