@@ -33,8 +33,8 @@ public class Door : MonoBehaviour
         interactable.selectExited.RemoveAllListeners();
         interactable.selectExited.AddListener((interaction) => OnHandleInteract());
 
-        interactable.hoverEntered.AddListener((interaction) => OnHoverEnter());
-        interactable.hoverExited.AddListener((interaction) => OnHoverExit());
+        //interactable.hoverEntered.AddListener((interaction) => OnHoverEnter());
+        //interactable.hoverExited.AddListener((interaction) => OnHoverExit());
 
     }
 
@@ -46,7 +46,7 @@ public class Door : MonoBehaviour
         }
     }
 
-    private void OnHoverEnter()
+   /* private void OnHoverEnter()
     {
         doorHandle.transform.localScale = defaultScale * 1.1f;
     }
@@ -54,6 +54,6 @@ public class Door : MonoBehaviour
     private void OnHoverExit()
     {
         doorHandle.transform.localScale = defaultScale;
-    }
+    } */
 }
 

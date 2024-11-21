@@ -78,10 +78,11 @@ public class CatalogueManager : MonoBehaviour
             Destroy(child.gameObject);
         }
         carAnchor.position = car.anchorPos;
+        carAnchor.rotation = Quaternion.Euler(car.anchorRotation);
         Instantiate(car.carPrefab, carAnchor.position, carAnchor.rotation, carAnchor);
         if (!wristUI.activeInHierarchy)
             wristUI.SetActive(true);
-        OnCarSpawned?.Invoke(car);
+        
         StartCoroutine(GetCarSpecs(car));
     }
 
@@ -90,6 +91,7 @@ public class CatalogueManager : MonoBehaviour
         using (UnityWebRequest webRequest = UnityWebRequest.Get(apiUrl + car.carName.Replace(" ", "_")))
         {
             yield return webRequest.SendWebRequest();
+            OnCarSpawned?.Invoke(car);
 
             if (webRequest.result == UnityWebRequest.Result.ConnectionError || webRequest.result == UnityWebRequest.Result.ProtocolError)
             {

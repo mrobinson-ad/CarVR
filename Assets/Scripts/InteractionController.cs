@@ -8,9 +8,12 @@ public class InteractionController : MonoBehaviour
 
     [SerializeField]
     private GameObject carAnchor;
-    private void Start()
+    private void OnEnable()
     {
-        CatalogueManager.Instance.OnCarSpawned += SetCar;
+        if (CatalogueManager.Instance != null)
+        {
+            CatalogueManager.Instance.OnCarSpawned += SetCar;
+        }
     }
 
     private void OnDisable()
@@ -22,7 +25,9 @@ public class InteractionController : MonoBehaviour
     }
     public void SetCar(Car_SO car)
     {
+        currentCar = null;
         currentCar = carAnchor.GetComponentInChildren<ICarInteraction>();
+        Debug.Log(currentCar);
         if (currentCar == null)
         {
             Debug.LogWarning("The selected object does not implement ICarInteraction.");
