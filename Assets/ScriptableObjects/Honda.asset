@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a948ac58a0851b343b9f352b1d612f00, type: 3}
+  m_Name: Honda
+  m_EditorClassIdentifier: 
+  carName: Honda Civic
+  carSprite: {fileID: 21300000, guid: 219c154d7b95e4343810c86f3102bdef, type: 3}
+  carPrefab: {fileID: 7677664142590449532, guid: d74cb5cc86e95134b834916684121dff, type: 3}
+  carPaint: {fileID: 2100000, guid: 4ea96e76765dc13428d33220cffdfdde, type: 2}
+  carColors:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0.9150943, g: 0.9150943, b: 0.9150943, a: 1}
+  - {r: 0.02367392, g: 0.1529285, b: 0.7169812, a: 1}
+  anchorPos: {x: 0, y: 0.23, z: -2}
+  anchorRotation: {x: -90, y: 130, z: 0}

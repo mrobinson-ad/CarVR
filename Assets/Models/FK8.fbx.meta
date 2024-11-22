@@ -1,0 +1,284 @@
+fileFormatVersion: 2
+guid: d989e1c20ba4efc44a46c31836b36080
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.Badge
+    second: {fileID: 2100000, guid: 10082950b8e6b894baadf6ca794063b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.BlackGloss
+    second: {fileID: 2100000, guid: a0c22d2d48bed5d43bc5fc0319e1c7d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.BlackMatt
+    second: {fileID: 2100000, guid: 572b971ddf02a614ea5f0abb69ed0596, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.BrakeDisc
+    second: {fileID: 2100000, guid: b42396abcb38f724496194d7949d9f97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.Brakelight
+    second: {fileID: 2100000, guid: 20fd5939fd47ff74fbdfc723d7083152, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.Brembo
+    second: {fileID: 2100000, guid: 3c3b3430872bff145bc8616c91c6386d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.Brown
+    second: {fileID: 2100000, guid: 625f855931b465746b4892e0a823cbfa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.Carbon
+    second: {fileID: 2100000, guid: 27f48bfc49716fa44a9420547b3372ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.Chrome
+    second: {fileID: 2100000, guid: 2a814c11980465540a0cb56d75bbd925, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.Engine
+    second: {fileID: 2100000, guid: 93de991706023fd4a93efc58281091bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.Gray
+    second: {fileID: 2100000, guid: af9087ddcc6c6764fba6f556f0b458a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.Grille
+    second: {fileID: 2100000, guid: 39ea1762e4a21d44e93821950b6867a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.Headlight
+    second: {fileID: 2100000, guid: 7c0690bb0a7de0f4ab3192af23ad1c6e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.HeadlightGlass
+    second: {fileID: 2100000, guid: 1c6965eacf1baad4aaefc9a395ba0391, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.HighBeam
+    second: {fileID: 2100000, guid: 9079811a6001e9841b4e3866355ef697, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.Interior
+    second: {fileID: 2100000, guid: f8c78deea59ccd34cb3db5fe0dc029d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.Interiorlights
+    second: {fileID: 2100000, guid: 6abae32468c4f094686e78e393bf218e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.Paint
+    second: {fileID: 2100000, guid: 4ea96e76765dc13428d33220cffdfdde, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.Red
+    second: {fileID: 2100000, guid: 9525310cc79d63f4eba4d60947aca5a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.RedGloss
+    second: {fileID: 2100000, guid: 1716592cb07d6784489f10368676fbb8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.ReverseLight
+    second: {fileID: 2100000, guid: bf21101aa9c3c1d42a7e2bde06a5f779, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.RunningLight
+    second: {fileID: 2100000, guid: 3a0b0545234e34a419e400d467f60954, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.Signal.L
+    second: {fileID: 2100000, guid: eaeb83cf0aa8a9646b48d6bb8b098d72, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.Signal.R
+    second: {fileID: 2100000, guid: 32987f47b74d38544a140ab634d09971, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.Taillight
+    second: {fileID: 2100000, guid: 5f76fa8d77e76d74fbeabaa940af8dcf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.Tire
+    second: {fileID: 2100000, guid: a058a470007037946bbd352bde7d5995, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FK8.Windshield
+    second: {fileID: 2100000, guid: 4508f79323bc84441835545a4f70ffa4, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: badge
+    second: {fileID: 2800000, guid: 81afd8a2390902041a6e17a8f98928dc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: brembo
+    second: {fileID: 2800000, guid: fa2221fe58982fd44847cf5592ae4a58, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: carbon
+    second: {fileID: 2800000, guid: 595363e54025ffe48a2711887df5fe92, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: engine
+    second: {fileID: 2800000, guid: 501cce008aae713448f930976d4e5eea, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: grill1a
+    second: {fileID: 2800000, guid: 998144bbbee1bef469db595ef18a7fd5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: interior
+    second: {fileID: 2800000, guid: 25db58b9dd7885447b64bb73a8075aa8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: vehiclelights
+    second: {fileID: 2800000, guid: a9b58ed2ef312f34fba22367b5409c20, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: vehiclelights_on
+    second: {fileID: 2800000, guid: b2813de4073062443a62a78687d8e0b1, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
