@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a948ac58a0851b343b9f352b1d612f00, type: 3}
+  m_Name: Javelin
+  m_EditorClassIdentifier: 
+  carName: AMC Javelin
+  carSprite: {fileID: 21300000, guid: 963cd0eed2d57834da33bb465a39587e, type: 3}
+  carPrefab: {fileID: 5341586259914578645, guid: 2abf174f1cc931e47a657a5b327054d6, type: 3}
+  carPaint: {fileID: 2100000, guid: e9414c0c15f527a49a0c7b839b16e6e2, type: 2}
+  carColors:
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0.9607844, g: 0.9607844, b: 0.9607844, a: 1}
+  - {r: 0.25882354, g: 0.64705884, b: 0.87843144, a: 1}
+  - {r: 0.7176471, g: 0, b: 0.019607844, a: 1}
+  anchorPos: {x: 0, y: 0.4, z: -2}
+  anchorRotation: {x: 0, y: 130, z: 0}
