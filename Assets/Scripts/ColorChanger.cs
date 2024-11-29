@@ -11,7 +11,10 @@ public class ColorChanger : MonoBehaviour
 
     private void OnEnable()
     {
-        CatalogueManager.Instance.OnCarSpawned += SetColors;
+        if (CatalogueManager.Instance != null)
+        {
+            CatalogueManager.Instance.OnCarSpawned += SetColors;
+        }
     }
 
     private void OnDisable()
